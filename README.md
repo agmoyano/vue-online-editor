@@ -1,45 +1,79 @@
 # online-editor
 
-This template should help get you started developing with Vue 3 in Vite.
+This is the frontend part of Vue Experimental Online Editor (VEOE)
 
-## Recommended IDE Setup
+This is just a training project, so it's not complete
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## Installing
 
-## Type Support for `.vue` Imports in TS
+### Backend
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
-```sh
+```
+git clone https://github.com/agmoyano/vue-online-editor-backend.git
+cd vue-online-editor-backend
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+### Frontend
 
-```sh
-npm run dev
+```
+git clone https://github.com/agmoyano/vue-online-editor.git
+cd vue-online-editor
+npm install
 ```
 
-### Type-Check, Compile and Minify for Production
+## Running
 
-```sh
-npm run build
+You need both backend and frontend running at the same time.
+
+### Backend
+
+```
+vue-online-editor-backend $ npm run dev
 ```
 
-### Run Unit Tests with [Vitest](https://vitest.dev/)
+### Frontend
 
-```sh
-npm run test:unit
+```
+vue-online-editor $ npm run dev
 ```
 
-### Lint with [ESLint](https://eslint.org/)
+## Editing
 
-```sh
-npm run lint
-```
+1. The backend will be listening in port `3000`, so make sure it is available before launching.
+
+   Once you've got everything installed and running open in the browser the url displayed by the frontend init script.
+
+   ![image](./docs/images/init_frontend.png)
+
+   ![image](./docs/images/open_browser.png)
+
+2. Press `Get started` to create a new user
+
+   ![image](./docs/images/new_user.png)
+
+   (you can change your image before saving the user)
+
+   User info is saved to localStore.. there is no real persistance in backend so do not use this project to write the work of your life :stuck_out_tongue_winking_eye:
+
+3. Create a document
+
+   Click on the `+` button next to your user avatar and set a title for the document
+
+   ![image](./docs/images/new_document.png)
+
+4. Get inspired and write `Hello World!!!!`
+
+   ![image](./docs/images/hello_world.png)
+
+5. Copy the document url and paste it into a new browser (It must not share localStorage, for example, incognito mode).
+
+   It will require the creation of a user before you can edit the document.
+
+   Once everithing is ready, you can see that the new user joined the document
+
+   ![image](./docs/images/remote_user.png)
+
+6. If yo can place a browser next to the other, you can see the magic happen
+
+   <video width="320" height="240" controls><source src="./docs/images/parallel_editting.mov" type="video/mp4"></video>
