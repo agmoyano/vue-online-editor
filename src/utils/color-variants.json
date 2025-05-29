@@ -1,0 +1,454 @@
+{
+  "colors": [
+    "red",
+    "amber",
+    "yellow",
+    "lime",
+    "green",
+    "emerald",
+    "teal",
+    "cyan",
+    "sky",
+    "indigo",
+    "violet",
+    "purple",
+    "fuchsia",
+    "pink",
+    "rose",
+    "slate",
+    "gray",
+    "zinc",
+    "neutral",
+    "stone"
+  ],
+  "opacity": [
+    "opacity-50",
+    "opacity-60",
+    "opacity-70",
+    "opacity-80",
+    "opacity-90",
+    "opacity-100"
+  ],
+  "variants": {
+    "red": {
+      "text": "text-red-500",
+      "active": "var(--color-red-500)",
+      "inactive": "--alpha(var(--color-red-500), 50%)",
+      "background": [
+        "bg-red-500/50!",
+        "bg-red-500/60!",
+        "bg-red-500/70!",
+        "bg-red-500/80!",
+        "bg-red-500/90!",
+        "bg-red-500/100!"
+      ],
+      "borderStart": [
+        "border-l-red-500/50!",
+        "border-l-red-500/60!",
+        "border-l-red-500/70!",
+        "border-l-red-500/80!",
+        "border-l-red-500/90!",
+        "border-l-red-500/100!"
+      ]
+    },
+    "amber": {
+      "text": "text-amber-500",
+      "active": "var(--color-amber-500)",
+      "inactive": "--alpha(var(--color-amber-500), 50%)",
+      "background": [
+        "bg-amber-500/50!",
+        "bg-amber-500/60!",
+        "bg-amber-500/70!",
+        "bg-amber-500/80!",
+        "bg-amber-500/90!",
+        "bg-amber-500/100!"
+      ],
+      "borderStart": [
+        "border-l-amber-500/50!",
+        "border-l-amber-500/60!",
+        "border-l-amber-500/70!",
+        "border-l-amber-500/80!",
+        "border-l-amber-500/90!",
+        "border-l-amber-500/100!"
+      ]
+    },
+    "yellow": {
+      "text": "text-yellow-500",
+      "active": "var(--color-yellow-500)",
+      "inactive": "--alpha(var(--color-yellow-500), 50%)",
+      "background": [
+        "bg-yellow-500/50!",
+        "bg-yellow-500/60!",
+        "bg-yellow-500/70!",
+        "bg-yellow-500/80!",
+        "bg-yellow-500/90!",
+        "bg-yellow-500/100!"
+      ],
+      "borderStart": [
+        "border-l-yellow-500/50!",
+        "border-l-yellow-500/60!",
+        "border-l-yellow-500/70!",
+        "border-l-yellow-500/80!",
+        "border-l-yellow-500/90!",
+        "border-l-yellow-500/100!"
+      ]
+    },
+    "lime": {
+      "text": "text-lime-500",
+      "active": "var(--color-lime-500)",
+      "inactive": "--alpha(var(--color-lime-500), 50%)",
+      "background": [
+        "bg-lime-500/50!",
+        "bg-lime-500/60!",
+        "bg-lime-500/70!",
+        "bg-lime-500/80!",
+        "bg-lime-500/90!",
+        "bg-lime-500/100!"
+      ],
+      "borderStart": [
+        "border-l-lime-500/50!",
+        "border-l-lime-500/60!",
+        "border-l-lime-500/70!",
+        "border-l-lime-500/80!",
+        "border-l-lime-500/90!",
+        "border-l-lime-500/100!"
+      ]
+    },
+    "green": {
+      "text": "text-green-500",
+      "active": "var(--color-green-500)",
+      "inactive": "--alpha(var(--color-green-500), 50%)",
+      "background": [
+        "bg-green-500/50!",
+        "bg-green-500/60!",
+        "bg-green-500/70!",
+        "bg-green-500/80!",
+        "bg-green-500/90!",
+        "bg-green-500/100!"
+      ],
+      "borderStart": [
+        "border-l-green-500/50!",
+        "border-l-green-500/60!",
+        "border-l-green-500/70!",
+        "border-l-green-500/80!",
+        "border-l-green-500/90!",
+        "border-l-green-500/100!"
+      ]
+    },
+    "emerald": {
+      "text": "text-emerald-500",
+      "active": "var(--color-emerald-500)",
+      "inactive": "--alpha(var(--color-emerald-500), 50%)",
+      "background": [
+        "bg-emerald-500/50!",
+        "bg-emerald-500/60!",
+        "bg-emerald-500/70!",
+        "bg-emerald-500/80!",
+        "bg-emerald-500/90!",
+        "bg-emerald-500/100!"
+      ],
+      "borderStart": [
+        "border-l-emerald-500/50!",
+        "border-l-emerald-500/60!",
+        "border-l-emerald-500/70!",
+        "border-l-emerald-500/80!",
+        "border-l-emerald-500/90!",
+        "border-l-emerald-500/100!"
+      ]
+    },
+    "teal": {
+      "text": "text-teal-500",
+      "active": "var(--color-teal-500)",
+      "inactive": "--alpha(var(--color-teal-500), 50%)",
+      "background": [
+        "bg-teal-500/50!",
+        "bg-teal-500/60!",
+        "bg-teal-500/70!",
+        "bg-teal-500/80!",
+        "bg-teal-500/90!",
+        "bg-teal-500/100!"
+      ],
+      "borderStart": [
+        "border-l-teal-500/50!",
+        "border-l-teal-500/60!",
+        "border-l-teal-500/70!",
+        "border-l-teal-500/80!",
+        "border-l-teal-500/90!",
+        "border-l-teal-500/100!"
+      ]
+    },
+    "cyan": {
+      "text": "text-cyan-500",
+      "active": "var(--color-cyan-500)",
+      "inactive": "--alpha(var(--color-cyan-500), 50%)",
+      "background": [
+        "bg-cyan-500/50!",
+        "bg-cyan-500/60!",
+        "bg-cyan-500/70!",
+        "bg-cyan-500/80!",
+        "bg-cyan-500/90!",
+        "bg-cyan-500/100!"
+      ],
+      "borderStart": [
+        "border-l-cyan-500/50!",
+        "border-l-cyan-500/60!",
+        "border-l-cyan-500/70!",
+        "border-l-cyan-500/80!",
+        "border-l-cyan-500/90!",
+        "border-l-cyan-500/100!"
+      ]
+    },
+    "sky": {
+      "text": "text-sky-500",
+      "active": "var(--color-sky-500)",
+      "inactive": "--alpha(var(--color-sky-500), 50%)",
+      "background": [
+        "bg-sky-500/50!",
+        "bg-sky-500/60!",
+        "bg-sky-500/70!",
+        "bg-sky-500/80!",
+        "bg-sky-500/90!",
+        "bg-sky-500/100!"
+      ],
+      "borderStart": [
+        "border-l-sky-500/50!",
+        "border-l-sky-500/60!",
+        "border-l-sky-500/70!",
+        "border-l-sky-500/80!",
+        "border-l-sky-500/90!",
+        "border-l-sky-500/100!"
+      ]
+    },
+    "indigo": {
+      "text": "text-indigo-500",
+      "active": "var(--color-indigo-500)",
+      "inactive": "--alpha(var(--color-indigo-500), 50%)",
+      "background": [
+        "bg-indigo-500/50!",
+        "bg-indigo-500/60!",
+        "bg-indigo-500/70!",
+        "bg-indigo-500/80!",
+        "bg-indigo-500/90!",
+        "bg-indigo-500/100!"
+      ],
+      "borderStart": [
+        "border-l-indigo-500/50!",
+        "border-l-indigo-500/60!",
+        "border-l-indigo-500/70!",
+        "border-l-indigo-500/80!",
+        "border-l-indigo-500/90!",
+        "border-l-indigo-500/100!"
+      ]
+    },
+    "violet": {
+      "text": "text-violet-500",
+      "active": "var(--color-violet-500)",
+      "inactive": "--alpha(var(--color-violet-500), 50%)",
+      "background": [
+        "bg-violet-500/50!",
+        "bg-violet-500/60!",
+        "bg-violet-500/70!",
+        "bg-violet-500/80!",
+        "bg-violet-500/90!",
+        "bg-violet-500/100!"
+      ],
+      "borderStart": [
+        "border-l-violet-500/50!",
+        "border-l-violet-500/60!",
+        "border-l-violet-500/70!",
+        "border-l-violet-500/80!",
+        "border-l-violet-500/90!",
+        "border-l-violet-500/100!"
+      ]
+    },
+    "purple": {
+      "text": "text-purple-500",
+      "active": "var(--color-purple-500)",
+      "inactive": "--alpha(var(--color-purple-500), 50%)",
+      "background": [
+        "bg-purple-500/50!",
+        "bg-purple-500/60!",
+        "bg-purple-500/70!",
+        "bg-purple-500/80!",
+        "bg-purple-500/90!",
+        "bg-purple-500/100!"
+      ],
+      "borderStart": [
+        "border-l-purple-500/50!",
+        "border-l-purple-500/60!",
+        "border-l-purple-500/70!",
+        "border-l-purple-500/80!",
+        "border-l-purple-500/90!",
+        "border-l-purple-500/100!"
+      ]
+    },
+    "fuchsia": {
+      "text": "text-fuchsia-500",
+      "active": "var(--color-fuchsia-500)",
+      "inactive": "--alpha(var(--color-fuchsia-500), 50%)",
+      "background": [
+        "bg-fuchsia-500/50!",
+        "bg-fuchsia-500/60!",
+        "bg-fuchsia-500/70!",
+        "bg-fuchsia-500/80!",
+        "bg-fuchsia-500/90!",
+        "bg-fuchsia-500/100!"
+      ],
+      "borderStart": [
+        "border-l-fuchsia-500/50!",
+        "border-l-fuchsia-500/60!",
+        "border-l-fuchsia-500/70!",
+        "border-l-fuchsia-500/80!",
+        "border-l-fuchsia-500/90!",
+        "border-l-fuchsia-500/100!"
+      ]
+    },
+    "pink": {
+      "text": "text-pink-500",
+      "active": "var(--color-pink-500)",
+      "inactive": "--alpha(var(--color-pink-500), 50%)",
+      "background": [
+        "bg-pink-500/50!",
+        "bg-pink-500/60!",
+        "bg-pink-500/70!",
+        "bg-pink-500/80!",
+        "bg-pink-500/90!",
+        "bg-pink-500/100!"
+      ],
+      "borderStart": [
+        "border-l-pink-500/50!",
+        "border-l-pink-500/60!",
+        "border-l-pink-500/70!",
+        "border-l-pink-500/80!",
+        "border-l-pink-500/90!",
+        "border-l-pink-500/100!"
+      ]
+    },
+    "rose": {
+      "text": "text-rose-500",
+      "active": "var(--color-rose-500)",
+      "inactive": "--alpha(var(--color-rose-500), 50%)",
+      "background": [
+        "bg-rose-500/50!",
+        "bg-rose-500/60!",
+        "bg-rose-500/70!",
+        "bg-rose-500/80!",
+        "bg-rose-500/90!",
+        "bg-rose-500/100!"
+      ],
+      "borderStart": [
+        "border-l-rose-500/50!",
+        "border-l-rose-500/60!",
+        "border-l-rose-500/70!",
+        "border-l-rose-500/80!",
+        "border-l-rose-500/90!",
+        "border-l-rose-500/100!"
+      ]
+    },
+    "slate": {
+      "text": "text-slate-500",
+      "active": "var(--color-slate-500)",
+      "inactive": "--alpha(var(--color-slate-500), 50%)",
+      "background": [
+        "bg-slate-500/50!",
+        "bg-slate-500/60!",
+        "bg-slate-500/70!",
+        "bg-slate-500/80!",
+        "bg-slate-500/90!",
+        "bg-slate-500/100!"
+      ],
+      "borderStart": [
+        "border-l-slate-500/50!",
+        "border-l-slate-500/60!",
+        "border-l-slate-500/70!",
+        "border-l-slate-500/80!",
+        "border-l-slate-500/90!",
+        "border-l-slate-500/100!"
+      ]
+    },
+    "gray": {
+      "text": "text-gray-500",
+      "active": "var(--color-gray-500)",
+      "inactive": "--alpha(var(--color-gray-500), 50%)",
+      "background": [
+        "bg-gray-500/50!",
+        "bg-gray-500/60!",
+        "bg-gray-500/70!",
+        "bg-gray-500/80!",
+        "bg-gray-500/90!",
+        "bg-gray-500/100!"
+      ],
+      "borderStart": [
+        "border-l-gray-500/50!",
+        "border-l-gray-500/60!",
+        "border-l-gray-500/70!",
+        "border-l-gray-500/80!",
+        "border-l-gray-500/90!",
+        "border-l-gray-500/100!"
+      ]
+    },
+    "zinc": {
+      "text": "text-zinc-500",
+      "active": "var(--color-zinc-500)",
+      "inactive": "--alpha(var(--color-zinc-500), 50%)",
+      "background": [
+        "bg-zinc-500/50!",
+        "bg-zinc-500/60!",
+        "bg-zinc-500/70!",
+        "bg-zinc-500/80!",
+        "bg-zinc-500/90!",
+        "bg-zinc-500/100!"
+      ],
+      "borderStart": [
+        "border-l-zinc-500/50!",
+        "border-l-zinc-500/60!",
+        "border-l-zinc-500/70!",
+        "border-l-zinc-500/80!",
+        "border-l-zinc-500/90!",
+        "border-l-zinc-500/100!"
+      ]
+    },
+    "neutral": {
+      "text": "text-neutral-500",
+      "active": "var(--color-neutral-500)",
+      "inactive": "--alpha(var(--color-neutral-500), 50%)",
+      "background": [
+        "bg-neutral-500/50!",
+        "bg-neutral-500/60!",
+        "bg-neutral-500/70!",
+        "bg-neutral-500/80!",
+        "bg-neutral-500/90!",
+        "bg-neutral-500/100!"
+      ],
+      "borderStart": [
+        "border-l-neutral-500/50!",
+        "border-l-neutral-500/60!",
+        "border-l-neutral-500/70!",
+        "border-l-neutral-500/80!",
+        "border-l-neutral-500/90!",
+        "border-l-neutral-500/100!"
+      ]
+    },
+    "stone": {
+      "text": "text-stone-500",
+      "active": "var(--color-stone-500)",
+      "inactive": "--alpha(var(--color-stone-500), 50%)",
+      "background": [
+        "bg-stone-500/50!",
+        "bg-stone-500/60!",
+        "bg-stone-500/70!",
+        "bg-stone-500/80!",
+        "bg-stone-500/90!",
+        "bg-stone-500/100!"
+      ],
+      "borderStart": [
+        "border-l-stone-500/50!",
+        "border-l-stone-500/60!",
+        "border-l-stone-500/70!",
+        "border-l-stone-500/80!",
+        "border-l-stone-500/90!",
+        "border-l-stone-500/100!"
+      ]
+    }
+  }
+}
