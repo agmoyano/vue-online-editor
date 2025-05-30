@@ -29,11 +29,20 @@ export const useSelectionStore = defineStore('selection', () => {
     },
   )
 
-  watch(selection, (selection) => {
-    if (isSelectionAvailable(selection.start, selection.end)) {
-      remote.updateDocumentSelection(selection.start!, selection.end!)
-    }
-  })
+  watch(
+    selection,
+    (selection, oldSelection) => {
+      // console.log('Selection: ', JSON.stringify(selection, null, 2))
+      if (isSelectionAvailable(selection.start, selection.end)) {
+        remote.updateDocumentSelection(selection.start!, selection.end!)
+      } else if (oldSelection.start || oldSelection.end) {
+        remote.updateDocumentSelection()
+      }
+    },
+    {
+      deep: true,
+    },
+  )
 
   return {
     selection: computed(() => {
@@ -71,7 +80,7 @@ export const useSelectionStore = defineStore('selection', () => {
       return isColSelected({ ...selection.value }, line, col)
     },
     signalStartSelection() {
-      console.log('signalStartSelection')
+      // console.log('signalStartSelection')
       selectingFlag.value = true
       const { line, col } = cursorStore.cursor
       if (!selection.value.start) selection.value = { start: { line, col } }

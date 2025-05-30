@@ -88,11 +88,11 @@ export const useCursorStore = defineStore('cursor', () => {
     cursor: computed(() => cursor.value),
     cursorBlink: computed(() => cursorBlink.value),
     setCursorAt: (newCursor: Partial<CursorPosition>) => {
-      console.log('setCursorAt', newCursor)
+      // console.log('setCursorAt', newCursor)
       cursor.value = { ...cursor.value, ...newCursor }
     },
     moveCursor: (direction: string) => {
-      console.log('moving cursor')
+      // console.log('moving cursor')
       cursor.value = moveCursorAction(direction, cursor.value, document.value)
     },
     teleportTo(target: 'EOL' | 'BOL') {

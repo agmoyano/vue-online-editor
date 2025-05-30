@@ -56,44 +56,44 @@ export const useWebSocket = (): RemoteServer => {
       await new Promise((resolve) => {
         socket.emit('update:document:registry', registry.id, registry, resolve)
       })
-      console.log('Updated registry')
+      // console.log('Updated registry')
     },
     async updateCursorPosition(id: string, cursor: CursorPosition) {
       await new Promise((resolve) => {
         socket.emit('update:active:position', id, cursor, resolve)
       })
-      console.log('Updated cursor position')
+      // console.log('Updated cursor position')
     },
     async updateDocumentSelection(id: string, start?: CursorPosition, end?: CursorPosition) {
       await new Promise((resolve) => {
         socket.emit('update:active:selection', id, start, end, resolve)
       })
-      console.log('Updated document selection')
+      // console.log('Updated document selection')
     },
     async addDocumentColumn(id: string, cols: Col[], cursor: CursorPosition) {
       await new Promise((resolve) => {
         socket.emit('add:active:column', id, cols, cursor, resolve)
       })
-      console.log('Add document column')
+      // console.log('Add document column')
     },
     async removeDocumentColumn(id: string, start: CursorPosition, end: CursorPosition) {
       await new Promise((resolve) => {
         socket.emit('remove:active:column', id, start, end, resolve)
       })
-      console.log('Add document column')
+      // console.log('Add document column')
     },
     async joinActiveRegistry(id: string): Promise<RegistryRecord | undefined> {
       const registry = await new Promise<RegistryRecord | undefined>((resolve) => {
         socket.emit('join:active', id, resolve)
       })
-      console.log('Joined active registry')
+      // console.log('Joined active registry')
       return registry
     },
     async leaveActiveRegistry(id: string) {
       await new Promise((resolve) => {
         socket.emit('leave:active', id, resolve)
       })
-      console.log('Left active registry')
+      // console.log('Left active registry')
     },
 
     // Listeners
@@ -173,7 +173,7 @@ export const useWebSocket = (): RemoteServer => {
         user: User,
       ) => {
         callback(id, user, start, end)
-        console.log(`received remote selection for ${id}`)
+        // console.log(`received remote selection for ${id}`)
       }
       if (!socket) {
         listeners.push({

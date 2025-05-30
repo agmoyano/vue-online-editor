@@ -30,13 +30,13 @@ export const useKeyHandler = () => {
     handleKeyUp: (event: KeyboardEvent) => {
       switch (event.key) {
         case 'Shift':
-          console.log('stop selection')
+          // console.log('stop selection')
           selectionStore.signalStopSelection()
           break
       }
     },
     handleKeyDown: (event: KeyboardEvent) => {
-      console.log('keypress', event.key)
+      // console.log('keypress', event.key)
       let newPosition: CursorPosition
       switch (event.key) {
         case 'ArrowUp':
@@ -84,7 +84,7 @@ export const useKeyHandler = () => {
           cursorStore.teleportTo('BOL')
           break
         case 'Shift':
-          console.log('start selection')
+          // console.log('start selection')
           selectionStore.signalStartSelection()
           break
         case 'c':

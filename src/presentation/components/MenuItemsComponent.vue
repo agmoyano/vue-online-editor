@@ -106,7 +106,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, watch } from 'vue'
+import { ref } from 'vue'
 import router from '@/presentation/router'
 
 import { useUserStore } from '@/core/stores/user'
@@ -129,17 +129,17 @@ if (!userStore.hasUser) {
   router.replace({ name: 'home' })
 }
 
-watch(
-  () => registryStore.activeDocumentTitle,
-  () => {
-    console.log(registryStore.activeDocumentTitle, Date.now())
-  },
-)
+// watch(
+//   () => registryStore.activeDocumentTitle,
+//   () => {
+//     console.log(registryStore.activeDocumentTitle, Date.now())
+//   },
+// )
 
 const logoutMenu = ref<HTMLUListElement>()
 
 const openLogoutModal = () => {
-  console.log('openLogoutModal')
+  // console.log('openLogoutModal')
   modal.open('logoutModal')
   logoutMenu.value?.blur()
 }

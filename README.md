@@ -8,7 +8,7 @@ This is just a training project, so it's not complete
 
 ### Backend
 
-```
+```bash
 git clone https://github.com/agmoyano/vue-online-editor-backend.git
 cd vue-online-editor-backend
 npm install
@@ -16,7 +16,7 @@ npm install
 
 ### Frontend
 
-```
+```bash
 git clone https://github.com/agmoyano/vue-online-editor.git
 cd vue-online-editor
 npm install
@@ -28,13 +28,13 @@ You need both backend and frontend running at the same time.
 
 ### Backend
 
-```
+```bash
 vue-online-editor-backend $ npm run dev
 ```
 
 ### Frontend
 
-```
+```bash
 vue-online-editor $ npm run dev
 ```
 

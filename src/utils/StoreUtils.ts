@@ -25,7 +25,13 @@ export const isColSelected = (selection: SelectionType, line: number, col: numbe
 }
 
 export const isSelectionAvailable = (start?: CursorPosition, end?: CursorPosition) => {
-  if (!start || !end) return false
-  if (start.line === end.line && start.col === end.col) return false
+  if (!start || !end) {
+    // console.log('No start or end', start, end)
+    return false
+  }
+  if (start.line === end.line && start.col === end.col) {
+    // console.log('Same element', start, end)
+    return false
+  }
   return true
 }

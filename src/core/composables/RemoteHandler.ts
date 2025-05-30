@@ -79,7 +79,7 @@ export const useRemoteHandler = () => {
         remoteServer.updateCursorPosition(activeRecord.id, cursor)
       }
     },
-    updateDocumentSelection(start: CursorPosition, end: CursorPosition) {
+    updateDocumentSelection(start?: CursorPosition, end?: CursorPosition) {
       if (activeRecord) {
         remoteServer.updateDocumentSelection(activeRecord.id, start, end)
       }
@@ -131,7 +131,7 @@ function setListeners(remoteServer: RemoteServer) {
 
     const callbacks = listeners.get('updateUsers') as RemoteCallbacks['updateUsers'][]
     callbacks?.forEach((callback) => callback(user))
-    console.log(`received remote update user for ${id}`)
+    // console.log(`received remote update user for ${id}`)
 
     addRemoteUser(user)
   })
@@ -140,15 +140,14 @@ function setListeners(remoteServer: RemoteServer) {
     if (!isValidEvent(id, user)) return
     const callbacks = listeners.get('addColumn') as RemoteCallbacks['addColumn'][]
     callbacks?.forEach((callback) => callback(cols, cursor))
-    console.log(`received remote add column for ${id}`)
-    // documentStore.pasteBlockAt(cursor, cols, UpdateOrigin.REMOTE)
+    // console.log(`received remote add column for ${id}`)
   })
 
   remoteServer.onRemoteRemoveColumn((id, start, end, user) => {
     if (!isValidEvent(id, user)) return
     const callbacks = listeners.get('removeColumn') as RemoteCallbacks['removeColumn'][]
     callbacks?.forEach((callback) => callback(start, end))
-    console.log(`received remote remove column for ${id}`)
+    // console.log(`received remote remove column for ${id}`)
   })
 
   remoteServer.onRemoteCursorPositionUpdate((id, cursor, user) => {
@@ -172,12 +171,12 @@ function setListeners(remoteServer: RemoteServer) {
   remoteServer.onRemoteRegistryUpdate((record) => {
     const callbacks = listeners.get('updateRegistry') as RemoteCallbacks['updateRegistry'][]
     callbacks?.forEach((callback) => callback(record))
-    console.log('received remote update registry')
+    // console.log('received remote update registry')
   })
 
   remoteServer.onUserRegistries((records) => {
     const callbacks = listeners.get('syncRegistries') as RemoteCallbacks['syncRegistries'][]
     callbacks?.forEach((callback) => callback(records))
-    console.log('received sync registries')
+    // console.log('received sync registries')
   })
 }

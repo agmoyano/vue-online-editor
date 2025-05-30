@@ -108,7 +108,7 @@ export const useDocumentStore = defineStore('document', () => {
         last.col,
         lines[last.line].cols.length - last.col,
       )
-      console.log(remainingCols)
+      // console.log(remainingCols)
       const removedLines = lines.splice(first.line + 1, last.line - first.line)
       cols = lines[first.line].cols.splice(
         first.col,

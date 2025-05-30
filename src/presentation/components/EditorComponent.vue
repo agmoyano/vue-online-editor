@@ -5,7 +5,6 @@
     tabindex="-1"
     @keydown.prevent="handleKeyDown"
     @keyup.prevent="handleKeyUp"
-    @click="console.log()"
     role="textbox"
     contenteditable="true"
     aria-multiline="true"
