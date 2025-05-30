@@ -77,3 +77,5 @@ vue-online-editor $ npm run dev
 6. If yo can place a browser next to the other, you can see the magic happen
 
    ![image](./docs/images/parallel_editting.gif)
+
+   <video src="./docs/images/parallel_editting.gif"></video>
